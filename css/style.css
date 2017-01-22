@@ -1,0 +1,100 @@
+/* General styles*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+     margin:0;
+}
+
+span {
+   color: #1ac056; 
+}
+
+section {
+    padding: 30px 60px;
+}
+
+.kolumny {
+    width: 50%;
+    float:left;
+}
+
+h2{
+    text-align: center;
+}
+/* Main menu styles - rozpoczecie */
+#menu {
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    background-color:white;
+    position:fixed;
+    z-index: 10;
+}
+#menu > ul {
+    text-align: right;
+}
+
+.menu-item {
+    display:inline-block;
+    padding: 10px 30px; 
+}
+
+.menu-item > a{
+    color: #1ac056;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-item > a:hover {
+    color:#291f1a;
+}
+
+/* Main menu styles - zakonczenie */
+
+/* Nagłówek - rozpoczęcie */
+#header {
+    background-image: url(../img/header-background.jpg);
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+#header-content {
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+
+/* Nagłówek - zakończenie */
+
+/* O mnie styles */
+
+#about {
+   background-color:#f9fcfe;
+   font-family: 'Lato', sans-serif;
+   font-weight:300;
+   overflow: auto;
+}
+
+#about figure {
+    margin:0;
+    text-align: center;
+}
+
+#about img{
+    width:100%;
+    max-width: 300px;
+    border: 20px solid #fff;
+    border-radius:10px;
+}
+
+/* o mnie - zakończenie */
