@@ -1,0 +1,76 @@
+@media all and (max-width:1200px) {
+	/* moje portfolio - start */
+		#portfolio .portfolio-item  {
+		width:50%;
+	}
+	#portfolio .portfolio-item:last-child {
+		width:100%;
+	}
+	/* moje portfolio - koniec */
+}
+
+@media (max-width:768px) {
+	/* menu - start */
+	
+	#menu .toggle {
+	display:block;
+	color:#1ac056;
+	text-align: right;
+	font-weight: 700px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	}
+	
+	#menu ul {
+		display: none;
+	}
+	
+	#menu #drop:checked + ul {
+		display:block;
+	}
+	
+	#menu > ul > .menu-item {
+		display:block;
+		text-align: right;
+	}
+
+	/* menu - koniec */
+
+	/* o mnie - start */
+
+	.kolumny {
+		width:100%;
+	}
+	/* o mnie - koniec */
+	
+	/* moje portfolio - start */
+		#portfolio .portfolio-item  {
+		width:100%;
+	}
+	/* moje portfolio - koniec */
+	
+	/* kontakt i formularz - start */
+	#kontakt, #kontakt h2 {
+		text-align: center;
+	}
+	
+	#kontakt #ikonki-linki {
+		margin-bottom:50px;
+	}
+	/* kontakt i formularz - koniec */
+}
+
+@media (max-width:680px) {
+	/*  header */
+	
+	#header-content {
+		font-size: 1.2em;
+	}
+	/* header - koniec */
+}
+
+@media (max-width:480px)  {
+	section {
+    padding: 15px 30px;
+}
+}
