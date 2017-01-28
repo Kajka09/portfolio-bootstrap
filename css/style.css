@@ -199,14 +199,62 @@ h2{
 	color: #1ac056;
 }
 
+
+#ikonki-linki a {
+	color:white;
+	display: inline-block;
+	border: 1px white solid;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.4em;
+	margin-right: 20px;
+	margin-top: 40px;	
+	transition: all 0.3s;
+}
+
+#ikonki-linki a:hover {
+	color:rgb(33, 59, 80);
+	background-color:white;
+}
+
 #kontakt > .kolumny > input, textarea {
 	background-color:#4e708c;
 	border: 1px solid #4e708c;
+	width:100%;
+	padding: 15px;
+	margin-bottom: 10px;
 }
 
 #kontakt > .kolumny > #przycisk {
     background-color:#1ac056;
+	border:#1ac056 1px solid;
     color:white;
     height: 50px;
-    width: 100px;
+    width: auto;
+	text-transform:uppercase;
+	float: right;
 }
+
+#kontakt > .kolumny > #przycisk:hover {
+	background-color: white;
+	color:#1ac056;
+	cursor: pointer;
+}
+
+/* Kontakt i formularz - zakończenie */
+
+/* Stopka */
+
+footer {
+	background-color:rgb(20, 36, 48);
+	color: white;
+	padding: 5px 60 px;
+}
+
+footer p {
+	margin:0;
+}
+
+/* Stopka - koniec */
