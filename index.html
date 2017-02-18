@@ -15,19 +15,33 @@
     
     <!--Responsywność -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Bootstrap styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 </head>
 <body>
    <!-- Main menu-->
-    <nav id="menu" class="onclick-menu">
-    	<label for="drop" class="toggle">Menu</label>
- 		<input type="checkbox" id="drop">
-        <ul>
-            <li class="menu-item"><a href="#about">O mnie</a></li>
-            <li class="menu-item"><a href="#skills">Umiejętności</a></li>
-            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="#kontakt">Kontakt</a></li>
-        </ul>
-    </nav>
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		
+		<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+		</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="main-menu">
+				<ul class="nav navbar-nav text-right">
+					<li class="menu-item"><a href="#about">O mnie</a></li>
+					<li class="menu-item"><a href="#skills">Umiejętności</a></li>
+					<li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+					<li class="menu-item"><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
     <!-- Zakonczenie main menu -->
     
     <!-- Nagłówek -->
@@ -42,53 +56,60 @@
     
     <!-- O mnie -->
     <section id="about">
-        <h2>O <span> mnie </span></h2>
-        
-        <figure class="kolumny">
-            <img src="img/jan-nowak.jpg" alt="jan nowak">
-        </figure>
-        <div class="kolumny">
-         <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem delectus aperiam inventore nemo pariatur enim hic ut nihil itaque quo harum magnam, ab quae id porro dolores dolor quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem delectus aperiam inventore nemo pariatur enim hic ut nihil itaque quo harum magnam, ab quae id porro dolores dolor quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem delectus aperiam inventore nemo pariatur enim hic ut nihil itaque quo harum magnam, ab quae id porro dolores dolor quis!</p></div>
-        
+       <div class="container">
+       		<div class="row">
+        		<h2>O <span> mnie </span></h2>
+        	</div>
+         	<div class="row">
+				<figure class="column col-md-6"><img src="img/jan-nowak.jpg"class="img-responsive text-center" alt="jan nowak"></figure>
+				<div class="column col-md-6">
+					<p class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem delectus aperiam inventore nemo pariatur enim hic ut nihil itaque quo harum magnam, ab quae id porro dolores dolor quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem delectus aperiam inventore nemo pariatur enim hic ut nihil itaque squo harum magnam, ab quae id porro dolores dolor quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolorem delectus aperiam inventore nemo pariatur enim hic ut nihil itaque quo harum magnam, ab quae id porro dolores dolor quis!</p>
+				</div>
+			</div>
+   		</div>
     </section>
     <!-- Zakończenie O mnie -->
     
     <!--Umiejętności -->
     
     <section id="skills">
-        <h2>Moje <span> umiejętności</span></h2>
-        <br />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem, deserunt alias iusto sit! Tempora dolorum ipsam fuga repellat ut, maiores non aut, illo a illum sunt, tempore id. Placeat.</p>
-        
-        <div id="ikony">
-            
-        <figure>
-            <img src="icons/html5.png" alt="ikona HTML">
-            <figcaption>HTML5</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/css3.png" alt="ikona CSS">
-            <figcaption>CSS3</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/js.png" alt="ikona JS">
-            <figcaption>JavaScript</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/jquery.png" alt="ikona JQ">
-            <figcaption>jQuery</figcaption>
-        </figure>
-        </div>
-        
+      <div class="container text-center">
+       <div class="row">
+        	<h2>Moje <span> umiejętności</span></h2>
+        	<br />
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem, deserunt alias iusto sit! Tempora dolorum ipsam fuga repellat ut, maiores non aut, illo a illum sunt, tempore id. Placeat.</p>
+		</div>
+        <div id="ikony" class="row">
+        	<figure class="column col-md-3 col-lg-3">
+            	<img src="icons/html5.png" alt="ikona HTML">
+            	<figcaption>HTML5</figcaption>
+        	</figure>
+       		<figure class="column col-md-3 col-lg-3">
+            	<img src="icons/css3.png" alt="ikona CSS">
+            	<figcaption>CSS3</figcaption>
+       		</figure>
+        	<figure class="column col-md-3 col-lg-3">
+            	<img src="icons/js.png" alt="ikona JS">
+            	<figcaption>JavaScript</figcaption>
+        	</figure>
+        	<figure class="column col-md-3 col-lg-3">
+            	<img src="icons/jquery.png" alt="ikona JQ">
+            	<figcaption>jQuery</figcaption>
+        	</figure>
+          </div>
+	 </div> 
     </section>
     <!-- Zakończenie Umiejętności-->
     
     <!-- Moje portfolio -->
     <section id="portfolio">
-        <h2>Moje <span> portfolio</span></h2>
-            <div id="portfolio-items">
+       <div class="container">
+       	<div class="row">
+        	<h2>Moje <span> portfolio</span></h2>
+        </div>   
+        <div id="portfolio-items" class="row no-padding">
             
-            <div class="portfolio-item" id="portfolio-item-1">
+            <div class="portfolio-item column col-sm-6 col-lg-4" id="portfolio-item-1">
                 <div class="portfolio-item-mask">
                     <div class="portfolio-item-content">
                     	<div class="portfolio-item-content-inner">
@@ -100,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item" id="portfolio-item-2">
+            <div class="portfolio-item column col-sm-6 col-lg-4" id="portfolio-item-2">
                 <div class="portfolio-item-mask">
                     <div class="portfolio-item-content">
                     	<div>
@@ -113,7 +134,7 @@
                     	</div>
                     </div>
                 </div></div>
-            <div class="portfolio-item" id="portfolio-item-3">
+            <div class="portfolio-item column col-sm-12 col-lg-4" id="portfolio-item-3">
                 <div class="portfolio-item-mask">
                     <div class="portfolio-item-content">
                     	<div class="portfolio-item-content-inner">
@@ -127,37 +148,39 @@
             </div>
             
             </div>
-    
+    	</div>
     </section>
     
     <!-- Zakończenie Moje umiejętności -->
     
     <!-- Kontakt i formularz -->
     <section id="kontakt">
-    	<div class="kolumny">
-    		<h2>Jan <span> Nowak</span></h2><br />
+	<div class="container">
+		<div class="row">
+			<div class="column col-md-6">
+				<h2>Jan <span> Nowak</span></h2>
+				<br />
 				<p>ul Mostowa 6/13</p>
 				<p>31-061 Kraków</p>
-				<br /> 
+				<br />
 				<p>tel. 606 74 57 59</p>
 				<p>e-mail: <a id="email-example" href="mailto:example@example.pl">example@example.pl</a> </p>
-				
-				<div id="ikonki-linki">
-				
-					<a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="http://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-					<a href="http://tweeter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>	
+				<div id="ikonki-linki"> 
+					<a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+					<a href="http://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a> 
+					<a href="http://tweeter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+					<a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
 				</div>
-    	</div>
-    	
-    	<form class="kolumny" action="http://formspree.io/kajkastefaniak@gmail.com" method="POST">
-        	<input type="text" id="imie" name="name" placeholder="Imię i nazwisko">
-        	<input type="text" id="email" name="email" placeholder="E-mail">
-        	<textarea name="message" id="message" rows="2" cols="22" placeholder="Treść wiadomości"></textarea>
-    		<input id="przycisk" type="submit" value="Wyślij">
-    	</form>
-    </section>
+			</div>
+			<form class="column col-md-6" action="http://formspree.io/kajkastefaniak@gmail.com" method="POST">
+				<input type="text" id="imie" name="name" placeholder="Imię i nazwisko">
+				<input type="text" id="email" name="email" placeholder="E-mail">
+				<textarea name="message" id="message" rows="2" cols="22" placeholder="Treść wiadomości"></textarea>
+				<input id="przycisk" type="submit" value="Wyślij"> 
+			</form>
+		</div>
+	</div>
+</section>
     
    <!-- Zakończenie kontakt i formularz -->
    
@@ -169,5 +192,9 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
+    	<!--Bootstrap scripts -->
+	<script src="js/bootstrap.min.js"></script>
+		<!--ScrollReveal -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
 </html>

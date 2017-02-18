@@ -27,4 +27,11 @@ $(function(){
 		}
 	})
 	
+	
+	window.sr = ScrollReveal();
+	sr.reveal('.row > h2');
+	sr.reveal('.row > .column');
+	sr.reveal('#ikony >.column', { duration: 2000 }, 70);
+
+	
 });
